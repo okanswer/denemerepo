@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="Main.jsf" id="d1">
+        <af:messages id="m1"/>
+        <af:form id="f1">
+            <af:table value="#{bindings.PerfSipView1.collectionModel}" var="row"
+                      rows="#{bindings.PerfSipView1.rangeSize}"
+                      emptyText="#{bindings.PerfSipView1.viewable ? 'No data to display.' : 'Access Denied.'}"
+                      rowBandingInterval="0" selectedRowKeys="#{bindings.PerfSipView1.collectionModel.selectedRow}"
+                      selectionListener="#{bindings.PerfSipView1.collectionModel.makeCurrent}" rowSelection="single"
+                      fetchSize="#{bindings.PerfSipView1.rangeSize}"
+                      filterModel="#{bindings.PerfSipView1Query.queryDescriptor}"
+                      queryListener="#{bindings.PerfSipView1Query.processQuery}" filterVisible="true" varStatus="vs"
+                      id="t1">
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Sipno.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Sipno.label}" id="c1">
+                    <af:outputText value="#{row.Sipno}" shortDesc="#{bindings.PerfSipView1.hints.Sipno.tooltip}"
+                                   id="ot1"/>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Mustno.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Mustno.label}" id="c2">
+                    <af:outputText value="#{row.Mustno}" shortDesc="#{bindings.PerfSipView1.hints.Mustno.tooltip}"
+                                   id="ot2">
+                        <af:convertNumber groupingUsed="false" pattern="#{bindings.PerfSipView1.hints.Mustno.format}"/>
+                    </af:outputText>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Lineno.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Lineno.label}" id="c3">
+                    <af:outputText value="#{row.Lineno}" shortDesc="#{bindings.PerfSipView1.hints.Lineno.tooltip}"
+                                   id="ot3">
+                        <af:convertNumber groupingUsed="false" pattern="#{bindings.PerfSipView1.hints.Lineno.format}"/>
+                    </af:outputText>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Mustadi.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Mustadi.label}" id="c4">
+                    <af:outputText value="#{row.Mustadi}" shortDesc="#{bindings.PerfSipView1.hints.Mustadi.tooltip}"
+                                   id="ot4"/>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Litm.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Litm.label}" id="c5">
+                    <af:outputText value="#{row.Litm}" shortDesc="#{bindings.PerfSipView1.hints.Litm.tooltip}"
+                                   id="ot5"/>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Zyprg.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Zyprg.label}" id="c6">
+                    <af:outputText value="#{row.Zyprg}" shortDesc="#{bindings.PerfSipView1.hints.Zyprg.tooltip}"
+                                   id="ot6"/>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Zydia.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Zydia.label}" id="c7">
+                    <af:outputText value="#{row.Zydia}" shortDesc="#{bindings.PerfSipView1.hints.Zydia.tooltip}"
+                                   id="ot7">
+                        <af:convertNumber groupingUsed="false" pattern="#{bindings.PerfSipView1.hints.Zydia.format}"/>
+                    </af:outputText>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Zylng.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Zylng.label}" id="c8">
+                    <af:outputText value="#{row.Zylng}" shortDesc="#{bindings.PerfSipView1.hints.Zylng.tooltip}"
+                                   id="ot8">
+                        <af:convertNumber groupingUsed="false" pattern="#{bindings.PerfSipView1.hints.Zylng.format}"/>
+                    </af:outputText>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Zyprs.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Zyprs.label}" id="c9">
+                    <af:outputText value="#{row.Zyprs}" shortDesc="#{bindings.PerfSipView1.hints.Zyprs.tooltip}"
+                                   id="ot9"/>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Zynoc.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Zynoc.label}" id="c10">
+                    <af:outputText value="#{row.Zynoc}" shortDesc="#{bindings.PerfSipView1.hints.Zynoc.tooltip}"
+                                   id="ot10">
+                        <af:convertNumber groupingUsed="false" pattern="#{bindings.PerfSipView1.hints.Zynoc.format}"/>
+                    </af:outputText>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Zypres.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Zypres.label}" id="c11">
+                    <af:outputText value="#{row.Zypres}" shortDesc="#{bindings.PerfSipView1.hints.Zypres.tooltip}"
+                                   id="ot11">
+                        <af:convertNumber groupingUsed="false" pattern="#{bindings.PerfSipView1.hints.Zypres.format}"/>
+                    </af:outputText>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Zyicv.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Zyicv.label}" id="c12">
+                    <af:outputText value="#{row.Zyicv}" shortDesc="#{bindings.PerfSipView1.hints.Zyicv.tooltip}"
+                                   id="ot12"/>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Zydsv.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Zydsv.label}" id="c13">
+                    <af:outputText value="#{row.Zydsv}" shortDesc="#{bindings.PerfSipView1.hints.Zydsv.tooltip}"
+                                   id="ot13"/>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Zyask.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Zyask.label}" id="c14">
+                    <af:outputText value="#{row.Zyask}" shortDesc="#{bindings.PerfSipView1.hints.Zyask.tooltip}"
+                                   id="ot14"/>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Zyema.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Zyema.label}" id="c15">
+                    <af:outputText value="#{row.Zyema}" shortDesc="#{bindings.PerfSipView1.hints.Zyema.tooltip}"
+                                   id="ot15"/>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Zyawo.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Zyawo.label}" id="c16">
+                    <af:outputText value="#{row.Zyawo}" shortDesc="#{bindings.PerfSipView1.hints.Zyawo.tooltip}"
+                                   id="ot16"/>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Zyrev.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Zyrev.label}" id="c17">
+                    <af:outputText value="#{row.Zyrev}" shortDesc="#{bindings.PerfSipView1.hints.Zyrev.tooltip}"
+                                   id="ot17"/>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Planqty.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Planqty.label}" id="c18">
+                    <af:outputText value="#{row.Planqty}" shortDesc="#{bindings.PerfSipView1.hints.Planqty.tooltip}"
+                                   id="ot18">
+                        <af:convertNumber groupingUsed="false" pattern="#{bindings.PerfSipView1.hints.Planqty.format}"/>
+                    </af:outputText>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Uretqty.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Uretqty.label}" id="c19">
+                    <af:outputText value="#{row.Uretqty}" shortDesc="#{bindings.PerfSipView1.hints.Uretqty.tooltip}"
+                                   id="ot19">
+                        <af:convertNumber groupingUsed="false" pattern="#{bindings.PerfSipView1.hints.Uretqty.format}"/>
+                    </af:outputText>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Kalanqty.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Kalanqty.label}" id="c20">
+                    <af:outputText value="#{row.Kalanqty}" shortDesc="#{bindings.PerfSipView1.hints.Kalanqty.tooltip}"
+                                   id="ot20">
+                        <af:convertNumber groupingUsed="false"
+                                          pattern="#{bindings.PerfSipView1.hints.Kalanqty.format}"/>
+                    </af:outputText>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Isthafta.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Isthafta.label}" id="c21">
+                    <af:outputText value="#{row.Isthafta}" shortDesc="#{bindings.PerfSipView1.hints.Isthafta.tooltip}"
+                                   id="ot21">
+                        <af:convertNumber groupingUsed="false"
+                                          pattern="#{bindings.PerfSipView1.hints.Isthafta.format}"/>
+                    </af:outputText>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Thmteshaf.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Thmteshaf.label}" id="c22">
+                    <af:outputText value="#{row.Thmteshaf}" shortDesc="#{bindings.PerfSipView1.hints.Thmteshaf.tooltip}"
+                                   id="ot22">
+                        <af:convertNumber groupingUsed="false"
+                                          pattern="#{bindings.PerfSipView1.hints.Thmteshaf.format}"/>
+                    </af:outputText>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Thmbithtar.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Thmbithtar.label}" id="c23">
+                    <f:facet name="filter">
+                        <af:inputDate value="#{bindings.PerfSipView1Query.queryDescriptor.filterConjunctionCriterion.criterionMap.Thmbithtar.value}"
+                                      id="id1">
+                            <af:convertDateTime pattern="#{bindings.PerfSipView1.hints.Thmbithtar.format}"/>
+                        </af:inputDate>
+                    </f:facet>
+                    <af:outputText value="#{row.Thmbithtar}"
+                                   shortDesc="#{bindings.PerfSipView1.hints.Thmbithtar.tooltip}" id="ot23">
+                        <af:convertDateTime pattern="#{bindings.PerfSipView1.hints.Thmbithtar.format}"/>
+                    </af:outputText>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Kesrez.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Kesrez.label}" id="c24">
+                    <af:outputText value="#{row.Kesrez}" shortDesc="#{bindings.PerfSipView1.hints.Kesrez.tooltip}"
+                                   id="ot24"/>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Rezsur.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Rezsur.label}" id="c25">
+                    <af:outputText value="#{row.Rezsur}" shortDesc="#{bindings.PerfSipView1.hints.Rezsur.tooltip}"
+                                   id="ot25">
+                        <af:convertNumber groupingUsed="false" pattern="#{bindings.PerfSipView1.hints.Rezsur.format}"/>
+                    </af:outputText>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Acikurt.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Acikurt.label}" id="c26">
+                    <af:outputText value="#{row.Acikurt}" shortDesc="#{bindings.PerfSipView1.hints.Acikurt.tooltip}"
+                                   id="ot26"/>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Aciksat.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Aciksat.label}" id="c27">
+                    <af:outputText value="#{row.Aciksat}" shortDesc="#{bindings.PerfSipView1.hints.Aciksat.tooltip}"
+                                   id="ot27"/>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Siptarihi.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Siptarihi.label}" id="c28">
+                    <f:facet name="filter">
+                        <af:inputDate value="#{bindings.PerfSipView1Query.queryDescriptor.filterConjunctionCriterion.criterionMap.Siptarihi.value}"
+                                      id="id2">
+                            <af:convertDateTime pattern="#{bindings.PerfSipView1.hints.Siptarihi.format}"/>
+                        </af:inputDate>
+                    </f:facet>
+                    <af:outputText value="#{row.Siptarihi}" shortDesc="#{bindings.PerfSipView1.hints.Siptarihi.tooltip}"
+                                   id="ot28">
+                        <af:convertDateTime pattern="#{bindings.PerfSipView1.hints.Siptarihi.format}"/>
+                    </af:outputText>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Renk.name}" filterable="true"
+                           headerText="#{bindings.PerfSipView1.hints.Renk.label}" id="c29">
+                    <af:outputText value="#{row.Renk}" shortDesc="#{bindings.PerfSipView1.hints.Renk.tooltip}"
+                                   id="ot29"/>
+                </af:column>
+            </af:table>
+        </af:form>
+    </af:document>
+</f:view>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.1.3.10.47" id="MainPageDef1"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="PerfSipView1" RangeSize="25" DataControl="AppModuleDataControl" id="PerfSipView1Iterator"/>
+    <searchRegion Binds="PerfSipView1Iterator" Criteria=""
+                  Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer" id="PerfSipView1Query"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="PerfSipView1Iterator" id="PerfSipView1">
+      <nodeDefinition DefName="model.PerfSipView" Name="PerfSipView10">
+        <AttrNames>
+          <Item Value="Sipno"/>
+          <Item Value="Mustno"/>
+          <Item Value="Lineno"/>
+          <Item Value="Mustadi"/>
+          <Item Value="Litm"/>
+          <Item Value="Zyprg"/>
+          <Item Value="Zydia"/>
+          <Item Value="Zylng"/>
+          <Item Value="Zyprs"/>
+          <Item Value="Zynoc"/>
+          <Item Value="Zypres"/>
+          <Item Value="Zyicv"/>
+          <Item Value="Zydsv"/>
+          <Item Value="Zyask"/>
+          <Item Value="Zyema"/>
+          <Item Value="Zyawo"/>
+          <Item Value="Zyrev"/>
+          <Item Value="Planqty"/>
+          <Item Value="Uretqty"/>
+          <Item Value="Kalanqty"/>
+          <Item Value="Isthafta"/>
+          <Item Value="Thmteshaf"/>
+          <Item Value="Thmbithtar"/>
+          <Item Value="Kesrez"/>
+          <Item Value="Rezsur"/>
+          <Item Value="Acikurt"/>
+          <Item Value="Aciksat"/>
+          <Item Value="Siptarihi"/>
+          <Item Value="Renk"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>
