@@ -4,10 +4,12 @@
   <pageMap>
     <page path="/Main.jsff" usageId="view_MainPageDef"/>
     <page path="/Main.jsf" usageId="view_MainPageDef1"/>
+    <page path="/Edit.jsf" usageId="view_EditPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="view_MainPageDef" path="view.pageDefs.MainPageDef"/>
     <page id="view_MainPageDef1" path="view.pageDefs.MainPageDef1"/>
+    <page id="view_EditPageDef" path="view.pageDefs.EditPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="AppModuleDataControl" Package="model"

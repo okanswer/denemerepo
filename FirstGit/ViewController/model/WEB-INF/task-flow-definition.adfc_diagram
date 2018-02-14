@@ -20,7 +20,7 @@
          name="x">284.0</property>
    </View>
    <View
-      id="View3">
+      id="View7">
       <property
          name="activityId">Edit</property>
       <property
@@ -30,18 +30,22 @@
       <property
          name="exceptionHandler">false</property>
       <property
-         name="y">201.59766</property>
+         name="y">210.44824</property>
       <property
-         name="x">498.0</property>
+         name="x">488.5</property>
    </View>
    <ControlFlowCase
       islink="true"
-      id="ControlFlowCase4"
+      id="ControlFlowCase8"
       from="View2"
-      to="View3">
+      to="View7">
       <property
          name="fromOutcome">goEdit</property>
       <property
-         name="sdm:polyPoints">R50,325.0,216.59766,457.0,201.24707,L50</property>
+         name="tosrcid">__2</property>
+      <property
+         name="fromsrcid">__1</property>
+      <property
+         name="sdm:polyPoints">R50,325.0,216.59766,447.5,210.44824,L50</property>
    </ControlFlowCase>
 </SDM>

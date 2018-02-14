@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.1.3.13.26" id="EditPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="PerfSipView1" RangeSize="25" DataControl="AppModuleDataControl" id="PerfSipView1Iterator"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Sipno">
+      <AttrNames>
+        <Item Value="Sipno"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Mustno">
+      <AttrNames>
+        <Item Value="Mustno"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Lineno">
+      <AttrNames>
+        <Item Value="Lineno"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Mustadi">
+      <AttrNames>
+        <Item Value="Mustadi"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Litm">
+      <AttrNames>
+        <Item Value="Litm"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Zyprg">
+      <AttrNames>
+        <Item Value="Zyprg"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Zydia">
+      <AttrNames>
+        <Item Value="Zydia"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Zylng">
+      <AttrNames>
+        <Item Value="Zylng"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Zyprs">
+      <AttrNames>
+        <Item Value="Zyprs"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Zynoc">
+      <AttrNames>
+        <Item Value="Zynoc"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Zypres">
+      <AttrNames>
+        <Item Value="Zypres"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Zyicv">
+      <AttrNames>
+        <Item Value="Zyicv"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Zydsv">
+      <AttrNames>
+        <Item Value="Zydsv"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Zyask">
+      <AttrNames>
+        <Item Value="Zyask"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Zyema">
+      <AttrNames>
+        <Item Value="Zyema"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Zyawo">
+      <AttrNames>
+        <Item Value="Zyawo"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Zyrev">
+      <AttrNames>
+        <Item Value="Zyrev"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Planqty">
+      <AttrNames>
+        <Item Value="Planqty"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Uretqty">
+      <AttrNames>
+        <Item Value="Uretqty"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Kalanqty">
+      <AttrNames>
+        <Item Value="Kalanqty"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Isthafta">
+      <AttrNames>
+        <Item Value="Isthafta"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Thmteshaf">
+      <AttrNames>
+        <Item Value="Thmteshaf"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Thmbithtar">
+      <AttrNames>
+        <Item Value="Thmbithtar"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Kesrez">
+      <AttrNames>
+        <Item Value="Kesrez"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Rezsur">
+      <AttrNames>
+        <Item Value="Rezsur"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Acikurt">
+      <AttrNames>
+        <Item Value="Acikurt"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Aciksat">
+      <AttrNames>
+        <Item Value="Aciksat"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Siptarihi">
+      <AttrNames>
+        <Item Value="Siptarihi"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PerfSipView1Iterator" id="Renk">
+      <AttrNames>
+        <Item Value="Renk"/>
+      </AttrNames>
+    </attributeValues>
+    <action IterBinding="PerfSipView1Iterator" id="First" RequiresUpdateModel="true" Action="first"/>
+    <action IterBinding="PerfSipView1Iterator" id="Previous" RequiresUpdateModel="true" Action="previous"/>
+    <action IterBinding="PerfSipView1Iterator" id="Next" RequiresUpdateModel="true" Action="next"/>
+    <action IterBinding="PerfSipView1Iterator" id="Last" RequiresUpdateModel="true" Action="last"/>
+  </bindings>
+</pageDefinition>
