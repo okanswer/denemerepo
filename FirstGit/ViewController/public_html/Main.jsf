@@ -13,9 +13,13 @@
                       filterModel="#{bindings.PerfSipView1Query.queryDescriptor}"
                       queryListener="#{bindings.PerfSipView1Query.processQuery}" filterVisible="true" varStatus="vs"
                       id="t1">
-                <af:column sortProperty="#{bindings.PerfSipView1.hints.Sipno.name}" filterable="true"
+                      <af:column id="c18">
+                    <af:button text="Edit" action="goEdit" id="b1"/>
+                </af:column>
+                </af:column>
+                <af:column sortProperty="#{bindings.PerfSipView1.hints.Sipno.name}" filterable="true" 
                            headerText="#{bindings.PerfSipView1.hints.Sipno.label}" id="c1">
-                    <af:outputText value="#{row.Sipno}" shortDesc="#{bindings.PerfSipView1.hints.Sipno.tooltip}"
+                    <af:outputText value="#{row.Sipno}"  shortDesc="#{bindings.PerfSipView1.hints.Sipno.tooltip}"
                                    id="ot1"/>
                 </af:column>
                 <af:column sortProperty="#{bindings.PerfSipView1.hints.Mustno.name}" filterable="true"

@@ -8,5 +8,15 @@
     <view id="Main">
       <page>/Main.jsf</page>
     </view>
+    <view id="Edit">
+      <page>/Edit.jsf</page>
+    </view>
+    <control-flow-rule id="__1">
+      <from-activity-id>Main</from-activity-id>
+      <control-flow-case id="__2">
+        <from-outcome>goEdit</from-outcome>
+        <to-activity-id>Edit</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
   </task-flow-definition>
 </adfc-config>
