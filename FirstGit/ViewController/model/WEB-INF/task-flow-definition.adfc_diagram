@@ -30,7 +30,7 @@
       <property
          name="exceptionHandler">false</property>
       <property
-         name="y">210.44824</property>
+         name="y">210.09766</property>
       <property
          name="x">488.5</property>
    </View>
@@ -46,6 +46,6 @@
       <property
          name="fromsrcid">__1</property>
       <property
-         name="sdm:polyPoints">R50,325.0,216.59766,447.5,210.44824,L50</property>
+         name="sdm:polyPoints">R50,325.0,216.59766,447.5,209.74707,L50</property>
    </ControlFlowCase>
 </SDM>
